@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,500;0,600;0,900;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #2D102C;
+    --main-text-color: #E9D6C2
+}
+
+html, body {
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+}
+
+.left {
+    background-image: url("https://img.redbull.com/images/c_fill,g_auto,w_400,h_540/q_auto:low,f_auto/redbullcom/2016/02/09/1331775756898_2/firewatch-look-out-tower");
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    bottom: 50%;
+}
+
+
+.logo {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    text-align: center;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.right {
+    background-color: var(--main-bg-color);
+    color: #E9D6C2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    
+}
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+    
+    margin-bottom: 15%;
+}
+
+#larger {
+    font-size: 1.5rem;
+}
+
+
+#remote-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+    
+    margin-bottom: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    gap: 10px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    gap: 10px;
+}
+
+.button-container {
+    padding: 20px;
+    background-color: var(--main-bg-color);
+}
+
+.login a {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #c53ec1;
+    text-decoration: none;
+    
+}
+
+.login a:hover {
+    color: white;
+}
+
+input {
+    background-color: var(--main-bg-color);
+    border: 1px solid #c9c0b6;
+    padding: 3px;
+    border-radius: 3px;
+    color: var(--main-text-color);
+}
+
+label {
+    text-transform: uppercase;
+    color: #c9c0b6;
+}
+
+button {
+    padding: 8px;
+    border: 2px solid #c9c0b6;
+    border-radius: 5px;
+    width: 120px;
+    height: 50px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left {
+        background-image: url("https://images8.alphacoders.com/679/679478.jpg");
+        width: 40vw;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .logo {
+        position: relative;
+        top: 30%;
+        font-size: 1.6rem;
+        gap: 5px;
+        padding: 5px;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .maintext {
+    padding: 30px 90px 0px 30px;
+    margin-bottom: 0;
+    }
+
+    #larger {
+        font-size: 2rem;
+    }
+    #smaller {
+        font-size: 1.5rem;
+    }
+    .right {
+        text-align: left;
+        gap: 80px;
+        width: 60vw;
+        padding: 85px 0;
+    }
+
+    #remote-text {
+        margin-left: 25px;
+        font-size: 1.5rem;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0px 5px 0px 25px;
+    }
+    .button-container {
+        margin-left: 5px;
+    }
+    button {
+        width: auto;
+        height: auto;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+    
+    .login{
+        margin-left: 25px;
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    .login a {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 2000px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left {
+        background-image: url("https://images8.alphacoders.com/679/679478.jpg");
+        width: 40vw;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .logo {
+        position: relative;
+        top: 30%;
+        font-size: 2rem;
+        gap: 5px;
+        padding: 5px;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .maintext {
+        /*
+    padding: 30px 90px 0px 30px;*/
+    margin-bottom: 0;
+    }
+
+    #larger {
+        font-size: 2rem;
+    }
+    #smaller {
+        font-size: 1.5rem;
+    }
+    .right {
+        text-align: left;
+        gap: 40px;
+        width: 60vw;
+        padding: 85px 50px 0px  50px;
+
+    }
+
+    #remote-text {
+        /*
+        margin-left: 25px;
+        */
+        font-size: 1.5rem;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;/*
+        margin: 0px 5px 0px 25px;
+        */
+    }
+    
+    .button-container {
+        padding-bottom: 10px;
+        padding-left: 0;
+    }
+    
+    .bottom-container {
+        margin-top: 20px;
+    }
+    button {
+        width: auto;
+        height: auto;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+    
+    .login{
+        /*
+        margin-left: 25px;
+        margin-top: 10px;*/
+        font-size: 1.5rem;
+    }
+
+    .login a {
+        font-size: 1.5rem;
+    }
+}
+
